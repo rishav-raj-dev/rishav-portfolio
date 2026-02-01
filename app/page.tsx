@@ -71,12 +71,14 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Shivadhesh",
-      description: "This project aims to create a robust and feature-rich e-commerce website called Shivadhesh.",
-      image: "/modern-ecommerce-interface.png",
-      tech: ["JavaScript", "Django", "PostgreSQL", "Tailwind"],
-      github: "https://github.com/rishav21556/shivadhesh",
-      live: "https://shivadhesh.onrender.com/",
+      title: "RookRival",
+      description:
+      "RookRival is a real-time multiplayer chess web app where players compete live with friends or matched opponents. It keeps both boards perfectly synchronized, tracks match history, calculates ELO ratings, and includes authentication, challenges, and social gameplay features.",
+      image: "/chess-logo.png",
+      tech:
+        ["Next.js", "TypeScript", "MongoDB", "WebSocket", "Authentication Systems", "REST APIs"],
+      github: "https://github.com/rishav-raj-dev/RookRival",
+      live: "https://rookrival.onrender.com/",
     },
     {
       title: "MetroSense",
@@ -87,22 +89,31 @@ export default function Portfolio() {
       github: "https://github.com/rishav21556/MetroSense",
       live: "https://metrosense.onrender.com/",
     },
+    {
+      title: "Shivadhesh",
+      description: "This project aims to create a robust and feature-rich e-commerce website called Shivadhesh.",
+      image: "/modern-ecommerce-interface.png",
+      tech: ["JavaScript", "Django", "PostgreSQL", "Tailwind"],
+      github: "https://github.com/rishav21556/shivadhesh",
+      live: "https://shivadhesh.onrender.com/",
+    },
+    
   ]
 
   const experiences = [
     {
       title: "Software Engineer",
       company: "Lumio Partners and Private Limited",
-      period: "May 2025 - Present",
+      period: "May 2025 - Jan 2026",
       description:
-        "Designed and developed RESTful APIs using NestJS, created a Selenium-based automation tool, developed a chatbot to handle user queries related to order status, inventory levels, robot movements, and system requirements and developed frontend using Next JS.",
+        "Designed and developed RESTful APIs using NestJS, created a Selenium-based automation tool, developed a chatbot to handle user queries related to order status, inventory levels, robot movements, and system requirements and developed frontend using Next.js",
     },
     {
-      title: "Undergraduate Researcher",
-      company: "Complex Systems Lab",
-      period: "Aug 2024 - Nov 2024",
+      title: "Full Stack Developer",
+      company: "Navsrujan Innotech Foundation",
+      period: "July 2024 - Nov 2024",
       description:
-        "Extended previous work on the Ratatouille Tool for novel recipe generation by fine-tuning large language models to improve recipe quality and generation efficiency. Implemented parameter-efficient fine-tuning techniques (LoRA) to optimise model adaptation with minimal computational requirements.",
+        "Developed a multi-module coaching management system using Django to handle student admissions,attendance tracking, teacher/volunteer management, classes, and assessments across centers.",
     },
   ]
 
@@ -207,7 +218,7 @@ export default function Portfolio() {
               View My Work
             </Button>
             <Link
-              href="https://drive.google.com/file/d/1P0--40HXVg_32M9mK59vPGIk0iYxpwjY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1wmiyQvY2hT7ZJfKZZW2oEOVlV28w9w6-/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 bg-transparent border border-white text-white hover:bg-white hover:text-black transform hover:scale-105 transition-all duration-300 cursor-pointer"
@@ -234,12 +245,12 @@ export default function Portfolio() {
             >
               <Linkedin size={24} />
             </Link>
-            <Link
+            <a
               href="mailto:social.rishav.2003@gmail.com"
               className="text-gray-400 hover:text-white transform hover:scale-110 transition-all duration-300 cursor-pointer"
             >
               <Mail size={24} />
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -271,7 +282,7 @@ export default function Portfolio() {
 
               <div className="grid grid-cols-2 gap-4 pt-6">
                 <div className="text-center p-4 bg-white/5 rounded-lg backdrop-blur-sm">
-                  <div className="text-3xl font-bold text-gray-300">7</div>
+                  <div className="text-3xl font-bold text-gray-300">9</div>
                   <div className="text-gray-400">months Experience</div>
                 </div>
               </div>
@@ -424,7 +435,7 @@ export default function Portfolio() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Link href="mailto:social.rishav.2003@gmail.com" className="group cursor-pointer">
+            <a href="mailto:social.rishav.2003@gmail.com" className="group cursor-pointer">
               <Card className="bg-white/5 backdrop-blur-sm border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
                 <CardContent className="p-6 text-center">
                   <Mail className="text-white mx-auto mb-4 group-hover:text-gray-300 transition-colors" size={32} />
@@ -432,9 +443,9 @@ export default function Portfolio() {
                   <p className="text-gray-400">social.rishav.2003@gmail.com</p>
                 </CardContent>
               </Card>
-            </Link>
+            </a>
 
-            <Link href="tel:+918076568655" className="group cursor-pointer">
+            <a href="tel:+918076568655" className="group cursor-pointer">
               <Card className="bg-white/5 backdrop-blur-sm border-white/10 hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
                 <CardContent className="p-6 text-center">
                   <Phone className="text-white mx-auto mb-4 group-hover:text-gray-300 transition-colors" size={32} />
@@ -442,7 +453,7 @@ export default function Portfolio() {
                   <p className="text-gray-400">+91 8076568655</p>
                 </CardContent>
               </Card>
-            </Link>
+            </a>
 
             <Link
               href="https://www.google.com/maps/search/?api=1&query=Delhi,India"
