@@ -230,7 +230,7 @@ export default function Portfolio() {
 
           <div className="flex justify-center space-x-6">
             <Link
-              href="https://github.com/rishav21556"
+              href="https://github.com/rishav-raj-dev"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transform hover:scale-110 transition-all duration-300 cursor-pointer"
